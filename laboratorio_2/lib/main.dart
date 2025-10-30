@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:laboratorio_2/views/venta_page_view.dart';
 import 'views/salario_view.dart';
 import 'views/hamburguesa_view.dart';
 import 'views/numeros_view.dart';
 import 'views/promocion_view.dart';
 import 'widgets/Organismos/MainMenuOrganism.dart';
+import 'views/resultado_venta_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,6 +24,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => MenuPrincipal(),
+        'ventas': (context) => PaginaView(),
+        '/resultado': (context) => ResultadoView(),
         'salario': (context) => SalarioView(),
         'hamburguesa': (context) => HamburguesaView(),
         'numeros': (context) => NumerosView(),

@@ -17,7 +17,7 @@ class MainMenuOrganism extends StatelessWidget {
           const Text(
             'Menú Principal de Ejercicios',
             style: TextStyle(
-              fontSize: 30, // Ajusta según sea necesario
+              fontSize: 30,
               fontWeight: FontWeight.bold,
               color: Color(0xFFE88A60),
             ),
@@ -26,13 +26,15 @@ class MainMenuOrganism extends StatelessWidget {
           const SizedBox(height: 20),
           const Text(
             'Seleccione un ejercicio para comenzar:',
-            style: TextStyle(
-              fontSize: 18, // Ajusta según sea necesario
-              color: Color(0xFF6DA5A9),
-            ),
+            style: TextStyle(fontSize: 18, color: Color(0xFF6DA5A9)),
             textAlign: TextAlign.left,
           ),
           const SizedBox(height: 60),
+          BotonCalcular(
+            label: 'Ejercicio Clase - Sueldo',
+            onPressed: () => Navigator.pushNamed(context, 'ventas'),
+          ),
+          const SizedBox(height: 35),
           BotonCalcular(
             label: 'Ejercicio 4.5 - Sueldo del Vendedor',
             onPressed: () => Navigator.pushNamed(context, 'salario'),
